@@ -1,0 +1,20 @@
+import random
+n=float(input('дипазон от 1 до(введите карйнее верхнее значение)'))
+k=float(input('кол-во попыток:'))
+x=random.randint(1,n)
+while k>0:
+    k=k-1
+    f=float(input('число:'))
+    if x==f:
+        break
+    else:
+        if x>f:
+            print('больше')
+        if x<f:
+            print('меньше')
+    if k==0:
+        print('вы проиграли')
+    f=0
+if k>0:
+    print('вы угадали')
+print('загаданное число:',x)
