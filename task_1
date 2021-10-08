@@ -1,0 +1,6 @@
+n=float(input('введите число'))
+d=n%2
+if d>0:
+    print('нечетное')
+else:
+    print('четное')
