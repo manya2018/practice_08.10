@@ -1,5 +1,5 @@
 import random
-n=float(input('дипазон от 1 до(введите карйнее верхнее значение)'))
+n=float(input('дипазон от 1 до:'))
 k=float(input('кол-во попыток:'))
 x=random.randint(1,n)
 while k>0:
