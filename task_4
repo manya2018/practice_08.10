@@ -4,9 +4,15 @@ a=float(input('a:'))
 b=float(input('b:'))
 c=float(input('c:'))
 D=b**2-4*a*c
-x=(-b+D**(1/2))/(2*a)
-y=(-b-D**(1/2))/(2*a)
-print('x1:',x )
-print('x2:',y)
+if D==0:
+    z=-b/(2*a)
+    print('уравнение имеет один корень:',z)
+if D<0 and D!=0:
+    print('уравнение не имеет решений')
+else:
+    x=(-b+D**(1/2))/(2*a)
+    y=(-b-D**(1/2))/(2*a)
+    print('x1:',x )
+    print('x2:',y)
 
 
